@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!--
+            =>가상 클래스(psedo-class) 셀렉터
+
+            - :hover 마우스가 올라갈때 스타일 적용
+
+            - :active 마우스로 누르고 있는 상황에서 스타일 적용
+
+            - :focus  폼요소가 키보드아 마우스 클릭으로 포커스를 받을때 스타일 적용
+
+            - :first-letter <p>,<div>등과 같은 블록형 태그의 첫글자에 스타일 적용
+
+                <span>태그는 적용되지 않음
+
+            - :nth-child(even) 짝수번째 모든자식태그에 스타일적용
+
+            - :nth-child(odd) 홀수번째 모든자식태그에 스타일적용
+
+            - :nth-child(1) 1번째 자식태그에 스타일적용
+        -->
+    <style>
+        li:hover{
+            background-color: yellowgreen;
+        }
+        h3::first-letter{
+            color: red;
+        }
+        input[type=text]:focus{
+            background-color: red;
+        }
+        ol>li:nth-child(odd){
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+        <h3>스타일</h3>
+        <ul>
+            <li>red</li>
+            <li>green</li>
+            <li>blue</li>
+        </ul>
+        <form>
+            아이디: <input type="text" size="10"> <br><br>
+            암호: <input type="password" size="10">
+        </form>
+        <ol>
+            <li>red</li>
+            <li>green</li>
+            <li>blue</li>
+            <li>pink</li>
+            <li>yellow</li>
+        </ol>
+</body>
+</html>

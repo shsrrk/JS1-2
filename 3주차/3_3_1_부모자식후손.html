@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        =>자식 셀렉터
+        -부모 자식 관계인 두 셀렉터를 '>' 기호로 조합 
+    -->
+    <!-- 
+        => 자손 셀렉터
+        -자손 관계인 2개 이상의 태그 나열(공백구분)
+        -자손이란 자식과 그 후손 모두 포함 
+    -->
+    <style>
+        div > strong{
+            color: skyblue;
+        }
+        ul strong{
+            color: green;
+        }
+        input[type=text]{
+            background-color: rgb(216, 215, 215);
+            color: rgb(0, 0, 0);
+        }
+        input[type=password]{
+            background-color: pink;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div>2학기 <strong>학습내용</strong></div>
+    <ul>
+        <li>red</li>
+        <li><strong>green</strong></li>
+        <li>blue</li>
+    </ul>
+
+    <form>
+        아이디: <input type="text" size="10"> <br><br>
+        암호: <input type="password" size="10">
+    </form>
+</body>
+</html>

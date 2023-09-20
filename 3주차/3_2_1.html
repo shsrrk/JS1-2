@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        => CSS(cascading Style Sheet)
+        -html 문서의 색이나 모양 등 외관을 꾸미는 언어
+        -CSS로 작성된 코드를 스타일 시트라고 부름
+        - 색상, 텍스트, 폰트, 리스트, 테이블 등
+        -<style></style> 태그 내에서 주석 /**/ 표시
+        => html 문서에 CSS3 스타일 시트 만드는 방법 3가지
+        - <style></style> 태그에 스타일 시트 작성 예) 태그명{ 속성: 속성값;}
+        - style 속성에 스타일 시트를 작성 예) <p style=""></p>
+        - 스타일 시트를 별도 파일로 작성
+        예:<link> 태그나 @import 로 불러 사용 
+    -->
+
+    <!-- <style>
+        p {
+            color: blue; font-size: 12px;
+        }
+    </style> -->
+
+    <!-- @import
+    -import url(파일명)
+    -<style></style> 태그 내에 작성 -->
+
+
+    <!--
+        =>CSS속성 종류
+
+        - 배경색상 background-color
+
+        - 글자색상 color
+
+        - 테두리색상 border-color 
+
+        - 들여쓰기 text-indent
+
+        - 여백설정 margin-left,   margin-right  
+
+        -  문단정렬 text-align (left/center/right)
+
+        - 테두리 border
+
+        예: hr { border : 5px solid yellowgreen; }
+
+        - 글자크기 font-size
+
+        - 텍스트 꾸미기 text-decoration: underline/overline/line-through
+
+        - 폰트 굵기 font-weight /* 100~900의 범위에서 지정 */
+
+        - 폰트 스타일 font-style   : italic  (기울림)
+
+        - 폰트 글꼴 font-family
+    -->
+
+    <!-- <link rel="stylesheet" href="./3_2_2.css"> -->
+
+    <style>
+        /* body{
+            background-color: mistyrose;
+        }
+        h3{
+            color: purple; 
+            text-align: right;
+        }
+        hr{
+            border: 5px solid yellowgreen;
+        }
+        span{
+            color: blue; 
+            font-size: 20px; 
+            font-style: italic;
+            text-decoration: line-through;
+            font-weight: 700;
+        }
+        p{
+            text-indent: 3em;
+        } */
+        #list{
+            color: blue;
+            font-size: 20px;
+        }
+        .sub{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h3>CSS 맛보기</h3>
+    <hr>
+    <p>나는야 <span>웹프</span> 를 좋아합니다.</p>
+
+    <h3>부모 스타일 상속</h3>
+    <hr>
+    <p style="color: green;">자식 태그는 부모의 스타일을 <em style="font-size: 25px;">상속</em>받는다.</p> -->
+
+    안녕하세요.
+    <h3 id="list">태그 이름 셀렉터</h3>
+    <ul>
+        <li class="sub">red</li>
+        <li>green</li>
+        <li>blue</li>
+    </ul>
+
+    
+</body>
+</html> 
