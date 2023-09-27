@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background: #90d000;
+            width: 300px;
+            padding: 20px;
+        }
+        #round1{
+            border-radius: 50px;
+        }
+        #round2{
+            border-radius: 0px 20px 40px 60px;
+        }
+        #round3{
+            border-radius: 0px 20px 40px;
+            border-style: dotted;
+        }
+    </style>
+</head>
+
+<!--   
+    [border-radius]
+    -둥근 모서리 테두리 만들기, border-radius: 50px
+    -border-radius: 0px 20px 40px 60px;
+    시계 방향 순으로 반지름 적용 
+-->
+
+<body>
+    <h3>동근 모서리 테두리</h3>
+    <hr>
+    <P id="round1">50px</P>
+    <P id="round2">반지름 0, 20, 40, 60</P>
+    <P id="round3">반지름 0, 20, 40</P>
+
+
+</body>
+</html>
