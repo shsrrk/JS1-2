@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i,num;
+        var esum=0, osum=0;
+        num=5;
+        for (i = 1; i < num; i++) {
+            if ((i%2)==0) esum += i;
+            else          osum += i;
+        }
+        document.write("1부터"+num+" 까지의 짝수의 합"+esum+"<p>");
+        document.write("1부터"+num+" 까지의 홀수의 합"+esum+"<p>");
+    </script>
+</body>
+</html>
