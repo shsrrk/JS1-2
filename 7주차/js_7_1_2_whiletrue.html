@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1+2+3+.... > 500 (1부터 죽 더하되, 500이 넘으면 중단)
+        let i = 1, sum = 0;
+        while (true) {  //무한반복하슈
+            sum += i;
+            if(sum > 500) break;  //합이 500보다 크면 조건문 들어가서 break 걸어라
+            i++;
+        }
+        document.write(i+"까지 더하면 500이 넘어용: "+sum)
+    </script>
+</body>
+</html>

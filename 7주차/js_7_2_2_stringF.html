@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // string 관련 함수
+
+        // st.length 문자열 길이
+        // st.indexOf() 해당 문자열의 인덱스 값 변환
+        // st.charAt() 인덱스값에 해당되는 문자 변형
+
+        // st.replace 변환
+        // st.toLowerCase 모두 소문자로 변환
+        // st.toUpperCase 모두 대문자로 변환
+        // st.substring(시작,추출수) 해당 문자중 부분 추출
+
+        // eval() 문자열 수식으로 변환
+
+        var st = "apple";
+        
+        document.write(st + "<br>");
+        document.write(st.length + "<br/>")
+        document.write(st.indexOf("e") + "<br>");
+        document.write(st.charAt(4) + "<br>");
+
+        document.write(st.replace(/p/g,'*') + "<br>");  //p라는 글자 전부 *로 변환
+        document.write(st.toUpperCase() + "<br/>");
+        document.write(st.toLowerCase() + "<br>");
+        document.write(st.substring(0,3) + "<br>");   //0부터 3번째 까지만 표현해
+
+        document.write(eval("2+3+4") + "<br>");
+        
+    </script>
+</body>
+</html>

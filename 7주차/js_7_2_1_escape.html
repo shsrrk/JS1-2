@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // escape()
+        // 유니코드로 변환
+        // ㄴ영어, 수치는 그대로 표현되고, 공백, 한글, 특수문자는 16진수로 표현됨
+        // ㄴ get()방식으로 보낼 때는 보안으로 URL 인코딩할 때 사용
+        // unescape()
+        // 유니코드로 변환된 값울 복원
+
+        var str = "";
+            str = "마스크";
+            str += "?!";
+            str += "this123";
+
+        alert(escape(str));
+        alert(unescape(str));
+
+    </script>
+</body>
+</html>
