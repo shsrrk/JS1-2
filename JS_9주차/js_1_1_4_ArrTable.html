@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var mArray = new Array();
+        var titleArray = new Array("이름", "국어", "영어", "수학", "합계", "평균", "학점");
+        i=0;
+        while (confirm("성적 정보를 입력할까요?")) {
+            mArray[i] = new Array();
+            for ( j = 0; j < titleArray.length-3; j++) {
+                mArray[i][j]=prompt(titleArray[j]+"입력해주세요", "");
+            }
+            mArray[i][4]=parseInt(mArray[i][1])+parseInt(mArray[i][2])+parseInt(mArray[i][3]);
+            mArray[i][5]=mArray[i][4]/3;
+
+            switch (true) { //여기에 mArray[i][4]/3 넣으면 안 되는 이유???
+                case mArray[i][4]/3==100:
+                case mArray[i][4]/3>=90:
+                     mArray[i][6]="A";
+                     break;
+
+                case mArray[i][4]/3>=80:
+                mArray[i][6]="B";
+                    break;
+
+                case mArray[i][4]/3>=70:
+                mArray[i][6]="C";
+                    break;
+
+                case mArray[i][4]/3>=60:
+                mArray[i][6]="D";
+                    break;
+
+                default: mArray[i][6]="F";
+                    break;
+            }
+            
+            i++;
+        }
+        document.write("<table border='1' width='500'>");
+        document.write("<tr><td>이름</td><td>국어</td><td>영어</td><td>수학</td><td>합계</td><td>평균</td><td>학점</td></tr>");
+
+        for ( i = 0; i < mArray.length; i++) {
+            document.write("<tr>");
+                for ( j = 0; j < mArray[i].length; j++) {
+                    document.write("<td>"+mArray[i][j]+"</td>");
+                    
+
+                }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function disp(){
+            document.write("*");
+        }
+
+        //매개변수가 있는 함수
+        function disp1(a){
+            document.write("*");
+        }
+
+         //retrun 문이 있는 함수
+         function disp2(a,b) {
+            if(a>b) document.write(a);
+            else document.write(b);
+        }
+
+        //두수를 입력하여 큰 값을 출력하는 프로그램 return 값이 있는 함수
+        function disp3(a, b) {
+            if(a>b) return a;
+            else  return b;
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var a = Math.random();
+        document.write(a)
+        for ( i = 0; i < a; i++) {
+            disp();
+        }
+
+        //매개변수가 있는 함수
+        b=4;
+        disp1(5);
+
+        //return 값이 있는 함수
+        disp2(5,10)
+
+        //두수를 입력하여 큰 값을 출력하는 프로그램 return 값이 있는 함수
+        document.write("결과:"+disp3(5,10));
+    </script>
+</body>
+</html>
