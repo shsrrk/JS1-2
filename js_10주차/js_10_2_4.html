@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function test1(a) {
+            document.write(a);
+            document.bgColor = a;
+            document.write("배경색은 "+a+" 입니다.<br>")
+        }
+    </script>
+</head>
+<body>
+    <script language = "javascript">
+        color = prompt("색상상수값 입력하세요. 예:red", "");
+        document.write(color);
+        test1(color);
+    </script>
+    
+</body>
+</html>

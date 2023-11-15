@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language = "JavaScript"> //언어가 js 이외에 언어일 때 선언을 해줘야 하기 때문 기본값이 js 이기 때문에 생략가능
+        function test1(a,b) {
+            sum = a+b;
+            return sum;
+        }
+    </script>
+</head>
+<body>
+    <script language = "JavaScript">
+        num1 = parseInt(prompt("수치 하나 입력하세요.", 0));
+        num2 = parseInt(prompt("수치 하나 입력하세요.", 0));
+
+        alert("결과의 합: "+test1(num1, num2));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function UpperCase(tt){
+            var x=tt.frame.value;
+            tt.frame.value=x.toUpperCase();
+        }
+    </script>
+</head>
+<body>
+    <form name="aa">
+        
+        <input type="text" name="myName" onChange="UpperCase(this.form)"> <!--aa를 tt로 넘겨라-->
+        <!--text 입력하면 onchange로 onChangeUpperCase함수를 불러라-->
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript">
+        function changeMoney() {
+            var f = document.myForm.beforeValue.value;
+            var tempString = "";
+            var rsString = "";
+
+            tempString = f;
+            tempString = tempString.replace(/,/g,'');
+
+            for (let x = 1; x <= tempString.length; x++) {
+                if (x > 1 && (x%3) == 1) {
+                    rsString = tempString.charAt(tempString.length - x) + "," + rsString;
+                } else {
+                    rsString = tempString.charAt(tempString.length - x) + rsString;
+                }
+            }
+            document.myForm.afterValue.value = rsString; //이게 배열도 아니고 글자 순서에 따라서 자동으로 순서를 어떻게 지정하고 알지>??
+        }
+    </script>
+</head>
+<body>
+
+    <form action="" name="myForm">
+        <input type="text" name="beforeValue" id=""><br>
+        <input type="button" value="바꾸기" onclick="changeMoney();"><br>
+        <input type="text" name="afterValue" id="">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function onChangeUpperCase(){
+            var myID = document.aa.myName.value; //document 는 html 문서 전체 .은 하위 요소
+            document.aa.myName.value = myID.toUpperCase(); //to는 변환하라는 말이라고 알아들어면 됨
+        }
+    </script>
+</head>
+<body>
+    <form name="aa">
+        Enter your name:
+        <input type="text" name="myName" onchange="onChangeUpperCase()"> 
+        <!--text 입력하면 onchange로 onChangeUpperCase함수를 불러라-->
+    </form>
+    
+</body>
+</html>
