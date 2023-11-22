@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(a) {
+            if (a.value.length > 3) {
+                alert("maximum 3 letters");
+                a.value=a.value.substring(0,3); //value 값이 어떻게 작용하는 거지
+            }
+        }
+        function check_set(a) {
+            alert(a.options[a.selectedIndex].value);
+        }
+    </script>
+</head>
+<body>
+    <h1>이름이 4글자 이상이면 경고 메세지 출력</h1>
+    <form>
+        이름: <input type="text" name="na" onchange="check(this)"><br><br>
+    </form>
+</body>
+</html>

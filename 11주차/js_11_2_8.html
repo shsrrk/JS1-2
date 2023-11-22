@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function choiceRange() {
+            var eEvent = window.event;
+
+            if (eEvent.srcElement) {
+                choice = eEvent.srcElement;
+            }
+            var tname;
+            tname = choice.tagName;
+
+            alert("마우스를 눌렀네요?" +tname+ "영역을 누르셨네요~");
+        }
+    </script>
+</head>
+<body onmousedown="choiceRange()">
+    <h2>H2 영역입니다.</h2>
+    <p>Paragraph영역입니다.</p>
+    <img border="0" src="img1.jpg" alt="myBall">
+</body>
+
+</html>

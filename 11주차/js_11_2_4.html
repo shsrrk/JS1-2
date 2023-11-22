@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bg_click(a) {
+            if (a.bg.selectedindex != 0) {
+                document.bgColor = a.bg.options[a.bg.selectedindex].value
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>배경색상</p>
+    <form>
+        <select name="bg" SIZE=5 onclick="bg_click(this.form)">
+            <option value="red">red
+            <option value="yellow">yellow
+            <option value="green">green
+            <option value="blue">blue
+        </select>
+    </form>
+</body>
+</html>

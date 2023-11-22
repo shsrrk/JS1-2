@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onFocus() 이벤트 sample!!</title>
+    <script>
+        //전역변수, 지역변수
+        // var count = 0;  //전역변수 선언
+
+        function button_onclick() {
+            var count = 0
+            count++;
+            alert(count+"회 클릭하셨습니다.");
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="button" value="버튼" onclick="button_onclick()">
+    </form>
+</body>
+</html>
